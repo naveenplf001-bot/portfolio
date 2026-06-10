@@ -3,6 +3,7 @@
 import { useState, type ReactNode } from 'react';
 import Link from 'next/link';
 import type { Project } from '@/types';
+import { hasRealImage } from '@/lib/portfolio';
 import ScrollReveal, { TiltCard } from '@/components/ScrollReveal';
 
 type Category = 'development' | 'marketing' | 'content';
@@ -222,7 +223,7 @@ function ProjectCard({
   accent: typeof ACCENT[Category];
   cat: Category;
 }) {
-  const hasImage = project.image_url && !project.image_url.startsWith('/projects/');
+  const hasImage = hasRealImage(project.image_url);
   const hasVideo = !!project.video_url;
 
   return (

@@ -57,3 +57,15 @@ export function getFooterData(): { brandName: string; email: string; socials: So
 export function getAllProjectIds(): number[] {
   return portfolioData.projects.map((p) => p.id);
 }
+
+/**
+ * Whether a project's `image_url` points to a real uploaded asset.
+ *
+ * The seed data uses placeholder paths like `/projects/ecommerce.jpg` that
+ * don't exist on disk; the UI treats those as "no image" and renders a
+ * gradient fallback instead. Centralised here so the rule lives in one place
+ * rather than being re-typed as `!url.startsWith('/projects/')` across the UI.
+ */
+export function hasRealImage(url?: string): boolean {
+  return !!url && !url.startsWith('/projects/');
+}

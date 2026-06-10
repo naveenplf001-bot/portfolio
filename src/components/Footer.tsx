@@ -40,7 +40,7 @@ export default function Footer({ brandName = 'Portfolio', email = '', socials = 
               {firstName}<span className="text-indigo-400">.</span>
             </Link>
             <p className="text-zinc-500 text-sm mt-3 leading-relaxed max-w-xs">
-              A team of 6 building products, running campaigns, and creating content that drives real results.
+              Building products, running campaigns, and creating content that drives real results.
             </p>
             {socials.length > 0 && (
               <div className="flex gap-3 mt-5">

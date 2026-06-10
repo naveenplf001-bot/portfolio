@@ -5,7 +5,7 @@ import ImageCarousel from '@/components/ImageCarousel';
 import ScrollReveal, { Parallax, Magnetic, TiltCard } from '@/components/ScrollReveal';
 import { CursorGlow, SpotlightCard, TextReveal, ScrollProgress, ImageReveal, FloatingParticles } from '@/components/AdvancedEffects';
 import Footer from '@/components/Footer';
-import { getProject, getRelatedProjects, getFooterData, getAllProjectIds } from '@/lib/portfolio';
+import { getProject, getRelatedProjects, getFooterData, getAllProjectIds, hasRealImage } from '@/lib/portfolio';
 
 // Pre-render one static page per project for `output: 'export'`.
 export function generateStaticParams() {
@@ -55,7 +55,7 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
   const related = getRelatedProjects(project.id, project.category || 'development');
   const footerData = getFooterData();
 
-  const hasImage = project.image_url && !project.image_url.startsWith('/projects/');
+  const hasImage = hasRealImage(project.image_url);
   const hasVideo = !!project.video_url;
   const hasGallery = project.gallery && project.gallery.length > 0;
   const hasHighlights = project.highlights && project.highlights.length > 0;
@@ -270,7 +270,7 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
             <div className="grid sm:grid-cols-3 gap-5">
               {related.map((rp, rIdx) => {
                 const rs = CAT[(rp.category || 'development') as keyof typeof CAT] || CAT.development;
-                const rpHasImage = rp.image_url && !rp.image_url.startsWith('/projects/');
+                const rpHasImage = hasRealImage(rp.image_url);
                 return (
                   <ScrollReveal key={rp.id} delay={rIdx * 120} scale={0.93} blur={4}>
                     <TiltCard intensity={6}>
