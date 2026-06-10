@@ -1,10 +1,10 @@
 {
   "settings": {
-    "hero_name": "Alex",
+    "hero_name": "Vision Grid",
     "hero_title": "Full Stack Developer",
     "hero_bio": "We build products that grow businesses — from full-stack web apps to marketing funnels that actually convert. Code, content, and strategy under one roof.",
     "contact_email": "alex@portfolio.com",
-    "site_title": "Alex | Build & Grow Digital",
+    "site_title": "Vision Grid | Build & Grow Digital",
     "site_description": "Full-stack development, digital marketing, and content creation"
   },
   "projects": [
@@ -525,7 +525,7 @@
       "id": 6,
       "name": "Priya Kapoor",
       "email": "priya@techstartup.io",
-      "message": "Alex rebuilt our entire platform and it handles 10x the traffic now. Fast, clean code, and always communicating. Would hire again in a heartbeat.",
+      "message": "Vision Grid rebuilt our entire platform and it handles 10x the traffic now. Fast, clean code, and always communicating. Would hire again in a heartbeat.",
       "rating": 5,
       "featured": true,
       "order": 1,
@@ -536,7 +536,7 @@
       "id": 7,
       "name": "Marcus Chen",
       "email": "marcus@d2cbrand.com",
-      "message": "We came with zero online presence and Alex delivered everything — the website, the ad campaigns, and the email funnel. Revenue doubled in the first quarter.",
+      "message": "We came with zero online presence and Vision Grid delivered everything — the website, the ad campaigns, and the email funnel. Revenue doubled in the first quarter.",
       "rating": 5,
       "featured": true,
       "order": 2,
@@ -558,7 +558,7 @@
       "id": 9,
       "name": "James Mitchell",
       "email": "james@fintech.com",
-      "message": "The SEO strategy Alex built for us brought in 3x organic traffic within four months. Thorough, data-driven, and genuinely understands search.",
+      "message": "The SEO strategy Vision Grid built for us brought in 3x organic traffic within four months. Thorough, data-driven, and genuinely understands search.",
       "rating": 5,
       "featured": false,
       "order": 4,
@@ -569,7 +569,7 @@
       "id": 10,
       "name": "Emily Torres",
       "email": "emily@creativestudio.co",
-      "message": "Our YouTube channel went from 200 subscribers to 15k after Alex took over content strategy and editing. The production quality is next level.",
+      "message": "Our YouTube channel went from 200 subscribers to 15k after Vision Grid took over content strategy and editing. The production quality is next level.",
       "rating": 4,
       "featured": false,
       "order": 5,

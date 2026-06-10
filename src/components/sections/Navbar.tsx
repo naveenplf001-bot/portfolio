@@ -4,9 +4,14 @@ export default function Navbar({ settings }: { settings: Record<string, string> 
   return (
     <nav className="fixed top-0 w-full z-50 nav-solid">
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-        <Link href="/" className="font-display font-bold text-xl tracking-tight text-white">
-          {settings.hero_name?.split(' ')[0] || 'Portfolio'}
-          <span className="text-indigo-200">.</span>
+        <Link href="/" aria-label={`${settings.hero_name || 'Vision Grid'} — home`} className="flex items-center">
+          <span className="w-10 h-10 rounded-full overflow-hidden ring-1 ring-white/15 bg-white/5 flex items-center justify-center transition-transform duration-200 hover:scale-105">
+            <img
+              src="/logo-mark.png"
+              alt={settings.hero_name || 'Vision Grid'}
+              className="w-full h-full object-cover scale-110"
+            />
+          </span>
         </Link>
 
         <div className="hidden md:flex items-center gap-7">

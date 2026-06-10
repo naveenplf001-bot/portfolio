@@ -18,7 +18,7 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Portfolio | Build & Grow Digital",
+  title: "Vision Grid | Build & Grow Digital",
   description: "We build high-performance websites, apps, and marketing systems that drive real business results.",
 };
 

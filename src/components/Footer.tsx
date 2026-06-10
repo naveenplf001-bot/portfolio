@@ -9,8 +9,6 @@ interface FooterProps {
 }
 
 export default function Footer({ brandName = 'Portfolio', email = '', socials = [] }: FooterProps) {
-  const firstName = brandName.split(' ')[0];
-
   return (
     <footer className="relative bg-gradient-to-b from-[#09090b] via-indigo-950/30 to-indigo-950/50 pt-20 pb-8 overflow-hidden">
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-indigo-600/[0.06] rounded-full blur-[150px] pointer-events-none" />
@@ -37,7 +35,7 @@ export default function Footer({ brandName = 'Portfolio', email = '', socials = 
           {/* Brand */}
           <div className="col-span-2 md:col-span-1">
             <Link href="/" className="font-display font-bold text-xl text-white">
-              {firstName}<span className="text-indigo-400">.</span>
+              {brandName}<span className="text-indigo-400">.</span>
             </Link>
             <p className="text-zinc-500 text-sm mt-3 leading-relaxed max-w-xs">
               Building products, running campaigns, and creating content that drives real results.
