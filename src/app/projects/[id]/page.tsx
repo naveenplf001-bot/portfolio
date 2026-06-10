@@ -84,7 +84,11 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
         {/* Nav */}
         <nav className="sticky top-0 z-50 nav-solid">
           <div className="max-w-6xl mx-auto px-6 h-14 flex items-center justify-between">
-            <Link href="/" className="font-display font-bold text-lg tracking-tight text-white">Portfolio<span className="text-indigo-200">.</span></Link>
+            <Link href="/" aria-label="Vision Grid — home" className="flex items-center">
+              <span className="w-11 h-11 rounded-full overflow-hidden ring-1 ring-white/15 bg-white/5 flex items-center justify-center transition-transform duration-200 hover:scale-105">
+                <img src="/logo-mark.png" alt="Vision Grid" className="w-full h-full object-cover scale-110" />
+              </span>
+            </Link>
             <Link href="/#work" className="text-sm text-indigo-100 hover:text-white transition-colors flex items-center gap-2">
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" /></svg>
               All Projects
